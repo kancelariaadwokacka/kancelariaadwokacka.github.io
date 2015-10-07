@@ -119,19 +119,19 @@ ul.sub-menu:before{
 	margin-top:46px;
 	}
 .header_v2 .sf-menu,.header_v11 .sf-menu,.header_v12 .sf-menu{
-	margin-top:28px;
+	margin-top: 40px;
 	}
 
 .header_v10 .sf-menu{margin-top:38px;}
 .header_v11 .sf-menu{margin-top:20px;}
 .header_v12 .sf-menu{ margin-top: 15px;margin-right: 25px;}
 .sticky .logo{
-	margin:18px 0px 0px;width:130px
+	margin:3px 0px 0px;width:130px
 	}
 	
 .logo{
-    width: 200px;
-    margin-top: 25px;
+    width: 250px;
+    margin-top: 15px;
     margin-bottom: 8px;
 	}
 	
