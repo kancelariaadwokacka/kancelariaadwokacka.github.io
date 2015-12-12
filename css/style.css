@@ -2723,6 +2723,9 @@ p.testi-details  {
 		
 /*	12. Accordion, Toggle
 ----------------------------------------------------------------------*/
+.without-border.toggle-head {
+    border: 0;
+}
 .accordion-head,
 .toggle-head,
 .tt_toggle,.tt_accordion_header {
@@ -2762,6 +2765,10 @@ p.testi-details  {
 .accordion-head:hover,
 .toggle-head:hover {
 	border-bottom:1px solid #ccc;
+}
+
+.toggle-head.without-border:hover {
+    border-bottom: 0;
 }
 
 .active .accordion-content,
@@ -4236,7 +4243,7 @@ hr.transparent{background:none;}
 	}
 .inner {
 	border:2px solid;
-	padding:34px;
+	padding: 34px 5px;
 	border-radius:4px;
 }
 

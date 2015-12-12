@@ -142,26 +142,26 @@ jQuery(document).ready(function ($) {
 	
 	// Toggle
 	jQuery("ul.tt-toggle li").each(function () {
-		jQuery(this).children(".toggle-content:not(.open)").css('display', 'none');
-		jQuery(this).find(".toggle-head-sign:not(.open)").html("&#43;");
-		jQuery(this).children(".toggle-head").bind("click", function () {
-			if (jQuery(this).parent().hasClass("active")) {
-				jQuery(this).parent().removeClass("active");
-			} else {
-				jQuery(this).parent().addClass("active");
-			}
-			jQuery(this).find(".toggle-head-sign").html(function () {
-				if (jQuery(this).parent().parent().hasClass("active")) {
-					return "&minus;";
-				} else {
-					return "&#43;";
-				}
-			});
-			jQuery(this).siblings(".toggle-content").slideToggle();
+	    jQuery(this).children(".toggle-content:not(.open)").css('display', 'none');
+	    jQuery(this).find(".toggle-head-sign:not(.open)").html("&#43;");
+	    jQuery(this).children(".toggle-head").bind("click", function () {
+		if (jQuery(this).parent().hasClass("active")) {
+		    jQuery(this).parent().removeClass("active");
+		} else {
+		    jQuery(this).parent().addClass("active");
+		}
+		jQuery(this).find(".toggle-head-sign").html(function () {
+		    if (jQuery(this).parent().parent().hasClass("active")) {
+			return "&minus;";
+		    } else {
+			return "&#43;";
+		    }
 		});
+		jQuery(this).siblings(".toggle-content").slideToggle();
+	    });
 	});
-	
-	
+
+
 	jQuery("ul.tt-toggle").find(".toggle-content.active").siblings(".toggle-head").trigger('click');
 	
 	
