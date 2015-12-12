@@ -593,15 +593,15 @@ i,.table table i:before,#header .search input{
 		}
 	.custom-icon-white,.custom-white-color{
 		color:#fff;}
-	.custom-paralax1{
-		background-color:#f6f6f6;border-top:solid 2px #aaaaaa !important;border-bottom:solid 2px #aaaaaa !important;
-		background-image:url(../images/parallax4.jpg) !important; 
+		.custom-paralax1{
+		   background-color:#f6f6f6;border-top:solid 2px #aaaaaa !important;border-bottom:solid 2px #aaaaaa !important;
+		   background-image:url(../images/parallax4.jpg) !important; 
 		}
-	.custom-paralax2{
-		background-color:#f6f6f6;background-image:url(../images/parallax5.jpg) !important;
+		.custom-paralax2{
+		   background-color:#f6f6f6;background-image:url(../images/parallax5.jpg) !important;
 		}
-	.custom-paralax3{
-		background-color:#f6f6f6;border-top:solid 2px #aaaaaa !important;border-bottom:solid 2px #aaaaaa !important;background-image:url(../images/1600x943.jpg) !important;
+		.custom-paralax3{
+		   background-color:#f6f6f6;border-top:solid 2px #aaaaaa !important;border-bottom:solid 2px #aaaaaa !important;background-image:url(../images/bg2.jpg) !important;
 		}
 	.custom-paralax-onepage,.custom-non-paralax1{
 		background-color:#dddddd;border-top:solid 2px #aaaaaa !important;border-bottom:solid 2px #aaaaaa !important;
