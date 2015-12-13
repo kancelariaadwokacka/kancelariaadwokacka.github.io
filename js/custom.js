@@ -319,48 +319,51 @@ jQuery(document).ready(function ($) {
 	
 	// Sticky
 	if ($(".my_sticky")[0]){
-		$('.my_sticky').before('<div class="Corpse_Sticky"></div>');
-		var isAdmin = $('#wpadminbar').height();
-		$(window).scroll(function(){
-			var offset = $(window).scrollTop();
-			var window_width = $(window).width();
-			var head_w = $('.my_sticky').height();
-			if (window_width >= 959) {
-				if(offset < 200){
-					if($('.my_sticky').data('sticky') === true){
-						$('.my_sticky').data('sticky', false);
-						$('.my_sticky').stop(true).animate({opacity : 0}, 300, function(){
-							$('.my_sticky').removeClass('sticky').css('padding-top','');
-							$('.my_sticky').stop(true).animate({opacity : 1}, 300);
-							$('.Corpse_Sticky').css('padding-top', '');
-						});
-					}
-				} else {
-					if($('.my_sticky').data('sticky') === false || typeof $('.my_sticky').data('sticky') === 'undefined'){
-						$('.my_sticky').data('sticky', true);
-						$('.my_sticky').stop(true).animate({opacity : 0},300,function(){
-							$('.my_sticky').addClass('sticky').css('padding-top', isAdmin + 'px');
-							$('.my_sticky.sticky').stop(true).animate({opacity : 1}, 300);
-							$('.Corpse_Sticky').css('padding-top', head_w + 'px');
-						});
-					}
-				}
+	    $('.my_sticky').before('<div class="Corpse_Sticky"></div>');
+	    var isAdmin = $('#wpadminbar').height();
+	    $(window).scroll(function(){
+		var offset = $(window).scrollTop();
+		var window_width = $(window).width();
+		var head_w = $('.my_sticky').height();
+		if (window_width >= 959) {
+		    if(offset < 200){
+			if($('.my_sticky').data('sticky') === true){
+			    $('.my_sticky').data('sticky', false);
+			    $('.my_sticky').stop(true).animate({opacity : 0}, 300, function(){
+				$('.my_sticky').removeClass('sticky').css('padding-top','');
+				$('.my_sticky').stop(true).animate({opacity : 1}, 300);
+				$('.Corpse_Sticky').css('padding-top', '');
+				$('.my_sticky .logo a img').attr('src', 'images/kancelaria_logo.png');
+			    });
 			}
-		});
-		
-		$(window).resize(function(){
-			var window_width = $(window).width();
-			if (window_width <= 959) {
-				if($('.my_sticky').hasClass('sticky')){
-					$('.my_sticky').removeClass('sticky');
-					$('.my_sticky').stop(true).animate({opacity : 0}, 300, function(){
-						$('.my_sticky').removeClass('sticky');
-						$('.my_sticky').stop(true).animate({opacity : 1}, 300);
-						$('.Corpse_Sticky').css('padding-top', '');
-					});
-				}
+		    } else {
+			if($('.my_sticky').data('sticky') === false || typeof $('.my_sticky').data('sticky') === 'undefined'){
+			    $('.my_sticky').data('sticky', true);
+			    $('.my_sticky').stop(true).animate({opacity : 0},300,function(){
+				$('.my_sticky').addClass('sticky').css('padding-top', isAdmin + 'px');
+				$('.my_sticky.sticky').stop(true).animate({opacity : 1}, 300);
+				$('.Corpse_Sticky').css('padding-top', head_w + 'px');
+				$('.my_sticky .logo a img').attr('src', 'images/kancelaria_logo_mini.png');
+			    });
 			}
-		});
+		    }
+		}
+	    });
+
+	    $(window).resize(function(){
+		var window_width = $(window).width();
+		if (window_width <= 959) {
+		    if($('.my_sticky').hasClass('sticky')){
+			$('.my_sticky').removeClass('sticky');
+			$('.my_sticky').stop(true).animate({opacity : 0}, 300, function(){
+			    $('.my_sticky').removeClass('sticky');
+			    $('.my_sticky').stop(true).animate({opacity : 1}, 300);
+			    $('.Corpse_Sticky').css('padding-top', '');
+			    $('.my_sticky .logo a img').attr('src', 'images/kancelaria_logo.png');
+			});
+		    }
+		}
+	    });
 	}
 
 	//Set Portfolio Height
