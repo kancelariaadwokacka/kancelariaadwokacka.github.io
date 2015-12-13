@@ -5294,7 +5294,7 @@ a.notification-close {
 	border-radius:4px;
 }
 .copyright {
-	float:right;
+	float:left;
 	padding:0 20px;
 }
 
@@ -5798,6 +5798,9 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 	width:auto !important;
 	max-width:none !important;
 }
+.gmap {
+    color: black;
+}
 .gm-style .gm-style-iw {
     font-size: 12px !important;
     font-weight: 400 !important;
@@ -5940,7 +5943,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     text-align:center;
 	}
 .footer_widget .address div{
-    margin-left: 95px;
+    margin-left: 45px;
 	text-align:left;
 	}
 .widget .address div a{color: #666;}
