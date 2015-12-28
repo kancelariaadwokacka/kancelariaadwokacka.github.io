@@ -1372,6 +1372,9 @@ li li a .sf-sub-indicator {  border-bottom:0 !important }
 	padding:40px 0;
 	margin:auto -100%;
 }
+.specialty {
+    padding: 0 10%;
+}
 .wrapbox.with-shadow {
 	box-shadow: 0 0 5px rgba(0,0,0,0.3) inset;
 }
