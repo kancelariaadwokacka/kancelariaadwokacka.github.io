@@ -547,7 +547,7 @@ function mapfucntion_map_extra() {
     var styles = [{stylers: [{ hue: "#cc8800" },{ saturation: -20 }]}];
     var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});map_extra.mapTypes.set("map_style", styledMap);  map_extra.setMapTypeId("map_style");
     var geocoder_map_extra = new google.maps.Geocoder();
-    var address = 'Radwanska 1, Lodz, Poland';
+    var address = 'Radwanska 4 lokal 1, Lodz, Poland';
     geocoder_map_extra.geocode( { 'address': address}, function(results, status) {
 	if (status == google.maps.GeocoderStatus.OK) {
 	    map_extra.setCenter(results[0].geometry.location);
@@ -559,7 +559,7 @@ function mapfucntion_map_extra() {
 		title: "Kancelaria Adwokat Moniki Walińskiej"
 	    });
 	    var infowindow = new google.maps.InfoWindow({
-		content: "<p>Kancelaria Adwokat Moniki Walińskiej<br/>ul. Radwańska 1, Łódź</p>"
+		content: "<p>Kancelaria Adwokat Moniki Walińskiej<br/>ul. Radwańska 4 lokal 1, Łódź</p>"
 	    });
 	    marker.addListener('click', function() {
 		infowindow.open(map_extra, marker);
@@ -586,7 +586,7 @@ function mapfucntion_map_footer() {
 	myOptions);
 	var styles = [{stylers: [{ hue: "#cc8800" },{ saturation: -20 }]}];var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});map_footer.mapTypes.set("map_style", styledMap);  map_footer.setMapTypeId("map_style");
 	var geocoder_map_footer = new google.maps.Geocoder();
-	var address = 'Radwanska 1, Lodz, Poland';
+	var address = 'Radwanska 4 lokal 1, Lodz, Poland';
 	geocoder_map_footer.geocode( { 'address': address}, function(results, status) {
 	    if (status == google.maps.GeocoderStatus.OK) {
 		map_footer.setCenter(results[0].geometry.location);
@@ -597,7 +597,7 @@ function mapfucntion_map_footer() {
 		    position: map_footer.getCenter(),
 		});
 		var infowindow = new google.maps.InfoWindow({
-		    content: "<p>Kancelaria Adwokat Moniki Walińskiej<br/>ul. Radwańska 1, Łódź</p>"
+		    content: "<p>Kancelaria Adwokat Moniki Walińskiej<br/>ul. Radwańska 4 lokal 1, Łódź</p>"
 		});
 		marker.addListener('click', function() {
 		    infowindow.open(map_footer, marker);
