@@ -4252,6 +4252,11 @@ hr.transparent{background:none;}
 	padding: 34px 5px;
 	border-radius:4px;
 }
+img.border {
+    border:2px solid;
+    border-color:#ddd;
+    border-radius:4px;
+}
 
 .inner:hover .tbutton{
 	transform:scale(1.2,1.2);
@@ -5139,7 +5144,9 @@ a.notification-close {
 
 /*	29. Services
 ----------------------------------------------------------------------*/
-.services {}
+.services {
+    min-height: 192px;
+}
 .ico_l {
 	font-size:70px;
 }
@@ -5442,9 +5449,10 @@ a.notification-close {
 /* 	33. Tables
 ----------------------------------------------------------------------*/
 .price-table {
-	-webkit-transition:all 0.3s ease;
-	transition:all 0.3s ease;
-	z-index:97;
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+    z-index:97;
+    min-height: 150px;
 }
 .price-table.featured {
 	transform:scale(1.04);
@@ -5463,10 +5471,11 @@ a.notification-close {
 	border-radius:4px;
 }
 .Bdetails {
-	background:#191919;
-	color:#fff;
-	position:relative;
-	border-radius:4px;
+    background:#191919;
+    color:#fff;
+    position:relative;
+    border-radius:4px;
+    min-height: 322px;
 }
 .price-table.light .Bdetails {
 	background:#FFF;
@@ -5482,8 +5491,9 @@ a.notification-close {
 }
 
 .Bhead h4 {
-	color:#fff;
-	padding:35px 20px 25px;
+    color:#fff;
+    padding:35px 10px 25px;
+    text-align: center;
 }
 
 .price-table.light .Bhead h4 {
@@ -6139,7 +6149,7 @@ div.ttcf7 .ttcf7-file{margin: 7px 0;}
 	overflow: hidden;
 	text-align: center;
 	border:2px solid #AAA;
-	padding:25px;
+	padding:15px;
 	border-radius:4px;
 	margin-top:10px;
 	-webkit-transition:border 0.2s ease, box-shadow 0.2s ease;
@@ -6585,6 +6595,7 @@ div.ttcf7 .placeheld {
 .mb0{ margin-bottom:0 !important }
 .mb10{ margin-bottom:10px !important }
 .mb,.mb20 { margin-bottom:20px !important }
+.mb25 { margin-bottom:25px !important }
 .mbt,.mb30 { margin-bottom:30px !important }
 .mbf,.mb40 { margin-bottom:40px !important }
 .mb50 { margin-bottom:50px !important }
