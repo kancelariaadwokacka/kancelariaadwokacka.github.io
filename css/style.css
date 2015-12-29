@@ -4278,32 +4278,39 @@ hr.transparent{background:none;}
 	color:#aaa;
 	color: rgba(255, 255, 255, 0.5);
 }
-.action.style1 .action-icon{
-	float: left;
+.member {
+    min-height: 185px;
+}
+.member .action-icon {
     font-size: 42px;
-    margin-right: 15px;
-	}
-	
-.action.style2 .action-icon{
-	float: right;
+    display:inline-block;
+}
+.action.style1 .action-icon, .member.style1 .action-icon {
+    float: right;
     font-size: 42px;
     margin-left: 15px;
-	}
+}
 	
-.action.style3 .action-icon{
-	font-size:60px;
-	display:inline-block;
-	margin-bottom:15px;
-	}
+.action.style2 .action-icon, .member.style2 .action-icon {
+    float: right;
+    font-size: 42px;
+    margin-left: 15px;
+}
 	
-	.action .action-button {
-	    border-radius: 4px;
-	    margin: 20px -20px -20px;
-	    padding: 15px 0 20px;
-	}
-	.action .action-button.action-button--no-margin {
-	    margin: -10px -20px -20px;
-	}
+.action.style3 .action-icon, .member.style3 .action-icon {
+    font-size:60px;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
+.action .action-button {
+    border-radius: 4px;
+    margin: 20px -20px -20px;
+    padding: 15px 0 20px;
+}
+.action .action-button.action-button--no-margin {
+    margin: -10px -20px -20px;
+}
 	
 
 /*	23. Notification Boxes
