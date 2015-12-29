@@ -1,6 +1,6 @@
 	
 body{
-	font-family: Raleway, Helvetica, Arial, sans-serif;
+	font-family: Signika, Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	color: #7A7A7A;
@@ -14,22 +14,22 @@ body{
 	background:#4a4a4a !important
 }
 h1{ 
-	font-family: Lora, Arial, Helvetica, sans-serif; font-size: 32px; font-weight: bold; color: #4a4a4a; 
+	font-family: Signika, Arial, Helvetica, sans-serif; font-size: 32px; font-weight: bold; color: #4a4a4a; 
 	}        
 h2{ 
-	font-family: Lora, Arial, Helvetica, sans-serif; font-size: 28px; font-weight: bold; color: #4a4a4a; 
+	font-family: Signika, Arial, Helvetica, sans-serif; font-size: 28px; font-weight: bold; color: #4a4a4a; 
 	}
 h3{ 
-	font-family: Lora, Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; color: #4a4a4a; 
+	font-family: Signika, Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; color: #4a4a4a; 
 	}
 h4{ 
-	font-family: Lora, Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; color: #4a4a4a; 
+	font-family: Signika, Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; color: #4a4a4a; 
 	}
 h5,.testimonial-s strong{ 
-	font-family: Lora, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #4a4a4a; 
+	font-family: Signika, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #4a4a4a; 
 	}
 h6{ 
-font-family: Lora, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #4a4a4a; 
+font-family: Signika, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #4a4a4a; 
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited  { font-weight: inherit; color: inherit; }
@@ -42,7 +42,7 @@ a{
 	}
 
 .sf-menu a{ 
-	font-size: 14px;color: #4a4a4a;font-family: Lora, Arial, Helvetica, sans-serif;font-weight: bold;
+	font-size: 14px;color: #4a4a4a;font-family: Signika, Arial, Helvetica, sans-serif;font-weight: bold;
 	}
 .sf-menu a:hover{ 
 	color: #4a4a4a;
