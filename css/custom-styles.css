@@ -197,7 +197,7 @@ ul.sub-menu:before{
 .pagination-tt ul li a:hover,.liteAccordion.flat,
 .theme-default .nivo-controlNav a,.tags a:hover,.tagcloud a:hover,a.mini-thumb img:hover,.flickr_badge_image a img:hover,
 ul.cart_list li img:hover,ul.product_list_widget li img:hover{
-	border-color:#4a4a4a !important
+	border-color:#cc8800 !important
 }
 .header_v2 .sf-menu li.special:before,.header_v8 .sf-menu li.special,.header_v10 .sf-menu li.special,.header_v11 .sf-menu li.special{
 	border-color:#cc8800 !important
