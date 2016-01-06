@@ -1033,7 +1033,7 @@ div.frame_10 { background:url(../images/frames/10.png) repeat-y center top }
 }
 
 .info i{margin:0 5px 0 20px}
-.info i:first-child{margin:0 5px 0 0}
+/*.info i:first-child{margin:0 5px 0 0}*/
 
 .info span {
 	margin:0 10px 0 0
@@ -1757,9 +1757,8 @@ li li a .sf-sub-indicator {  border-bottom:0 !important }
 	font-size:11px
 }
 
-.header_v9 .social-head { 
-	float:left;
-	margin:8px 0 0;
+.header_v9 .social-head {
+	margin:7px -25px 0;
 }
 .header_v9 .head {
 	border-top:0
