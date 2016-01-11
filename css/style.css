@@ -5927,7 +5927,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     font-size:11px;
     position:absolute;
     right:10px;
-    top:10px;
+    top:17px;
 	font-family:"FontAwesome";
     transition:all 0.2s ease 0s;
 	
@@ -6087,8 +6087,8 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 .ttcf7 input.ttcf7-not-valid {border-color:#cc0000;}
 
 .ttcf7 textarea{
-	width:95%;
-	height:120px;
+	width:91.5%;
+	height:124px;
 	}
 
 .ttcf7 .ttcf7-submit{
