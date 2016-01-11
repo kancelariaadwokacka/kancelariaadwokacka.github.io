@@ -299,22 +299,22 @@ i,.table table i:before,#header .search input{
 .shop #content .quantity .plus,
 .shop .quantity .minus,
 .shop .quantity .plus{
-	background:#cc8809 !important;
-	}
+   background:#cc8809 !important;
+}
 .shop a span.onsale, .shop span.onsale{
-	background:#cc8800 !important;
-	}
- 
+   background:#cc8800 !important;
+}
+
 
 
 @media only screen and (max-width: 767px) and (min-width: 480px){
-	.sf-menu a:hover {
-	background-color: !important }
-	}
+   .sf-menu a:hover {
+   background-color: !important }
+}
 
 
 
-	
+
 .tparrows {
    text-align:center;
    font-family:FontAwesome;

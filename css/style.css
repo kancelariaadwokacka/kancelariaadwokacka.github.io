@@ -4283,7 +4283,7 @@ img.border {
 	color: rgba(255, 255, 255, 0.5);
 }
 .member {
-    min-height: 185px;
+    min-height: 203px;
 }
 .member .action-icon {
     font-size: 42px;
@@ -5474,7 +5474,6 @@ a.notification-close {
     color:#fff;
     position:relative;
     border-radius:4px;
-    min-height: 322px;
 }
 .price-table.light .Bdetails {
 	background:#FFF;
@@ -5482,7 +5481,7 @@ a.notification-close {
 	border:solid 2px #aaa;
 }
 .Bhead {
-	border-bottom:2px solid #f5f5f5;
+    border-bottom:2px solid #f5f5f5;
 }
 
 .price-table.light .Bhead {
@@ -5531,9 +5530,45 @@ a.notification-close {
 	padding:12px 0 0 0;
 	color:#777;
 }
+@media only screen and (min-width: 1177px) {
+    .Bhead {
+	min-height: 0px;
+    }
+    .Blist {
+	min-height: 182px;
+    }
+}
+@media only screen and (min-width: 960px) and (max-width: 1177px) {
+    .Bhead {
+	min-height: 120px;
+    }
+    .Blist {
+	min-height: 200px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .Bhead {
+	min-height: 120px;
+    }
+    .Blist {
+	min-height: 290px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .Bhead,
+    .Blist {
+	min-height: 0;
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 479px) {
+    .Bhead,
+    .Blist {
+	min-height: 0;
+    }
+}
 .Blist {
-	padding:20px;
-	text-align:center;
+    padding:20px;
+    text-align:center;
 }
 .Blist ul{
 	border-bottom:solid 2px #f5f5f5;
@@ -6297,6 +6332,14 @@ div.ttcf7 .ttcf7-file{margin: 7px 0;}
 .alignleft{float:left;margin-right:20px}
 .aligncenter{float:none;margin:auto}
 
+@media only screen and (min-width: 1177px) {
+    .img-align-left {
+	float: left;
+    }
+    .text-align-right {
+	margin-left: 470px;
+    }
+}
 
 .gallery img{
 	padding:5px;
