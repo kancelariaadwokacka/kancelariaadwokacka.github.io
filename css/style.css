@@ -5141,10 +5141,70 @@ a.notification-close {
 	transform:scale(1);
 }
 
-/*	29. Services
+/*	29. Services & Photos
 ----------------------------------------------------------------------*/
-.services {
-    min-height: 192px;
+#monika_toga_100 { margin-bottom: 20px; }
+@media only screen and (min-width: 1177px) {
+    .services {
+	min-height: 192px;
+    }
+    #monika_adwokat_1177 { display: block }
+    #monika_adwokat_960 { display: none }
+    #monika_adwokat_768 { display: none }
+    #monika_adwokat_480 { display: none }
+    #monika_adwokat_100 { display: none }
+    #monika_toga_768 { display: block }
+    #monika_toga_480 { display: none }
+    #monika_toga_100 { display: none }
+}
+@media only screen and (min-width: 960px) and (max-width: 1177px) {
+    .services {
+	min-height: 192px;
+    }
+    #monika_adwokat_1177 { display: none }
+    #monika_adwokat_960 { display: block }
+    #monika_adwokat_768 { display: none }
+    #monika_adwokat_480 { display: none }
+    #monika_adwokat_100 { display: none }
+    #monika_toga_768 { display: block }
+    #monika_toga_480 { display: none }
+    #monika_toga_100 { display: none }
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .services {
+	min-height: 282px;;
+    }
+    #monika_adwokat_1177 { display: none }
+    #monika_adwokat_960 { display: none }
+    #monika_adwokat_768 { display: block }
+    #monika_adwokat_480 { display: none }
+    #monika_adwokat_100 { display: none }
+    #monika_toga_768 { display: block }
+    #monika_toga_480 { display: none }
+    #monika_toga_100 { display: none }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    #monika_adwokat_1177 { display: none }
+    #monika_adwokat_960 { display: none }
+    #monika_adwokat_768 { display: none }
+    #monika_adwokat_480 { display: block }
+    #monika_adwokat_100 { display: none }
+    #monika_toga_768 { display: none }
+    #monika_toga_480 { display: block }
+    #monika_toga_100 { display: none }
+}
+@media only screen and (min-width: 100px) and (max-width: 479px) {
+    .services {
+	min-height: 0px;
+    }
+    #monika_adwokat_1177 { display: none }
+    #monika_adwokat_960 { display: none }
+    #monika_adwokat_768 { display: none }
+    #monika_adwokat_480 { display: none }
+    #monika_adwokat_100 { display: block }
+    #monika_toga_768 { display: none }
+    #monika_toga_480 { display: none }
+    #monika_toga_100 { display: block }
 }
 .ico_l {
 	font-size:70px;
