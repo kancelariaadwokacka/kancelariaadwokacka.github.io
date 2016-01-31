@@ -5592,7 +5592,7 @@ a.notification-close {
 }
 @media only screen and (min-width: 1177px) {
     .Bhead {
-	min-height: 0px;
+	min-height: 120px;
     }
     .Blist {
 	min-height: 182px;
