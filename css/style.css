@@ -133,6 +133,9 @@ a {
 a:hover {
 	color:#ACACAC
 }
+a.no-hover:hover{
+	color:#000 !important;
+}
 h1, h2, h3, h4, h5, h6 {
 	color:#000;
 	padding:0;
@@ -1365,7 +1368,6 @@ li li a .sf-sub-indicator {  border-bottom:0 !important }
 /*	6. Page Content
 ----------------------------------------------------------------------*/
 .page-content {
-	padding:50px 0;
 	background:#f5f5f5;
 }
 .grey-line,.wrapbox {
@@ -6594,7 +6596,7 @@ body ul.tt_thumbnails-fluid li {
 .liststyle br{display:none}
 .liststyle li{line-height:24px;display: inline-block;width:100%}
 .liststyle li p{margin-left:20px}
-.liststyle li i{margin:7px 7px 0 0 !important;float:left}
+.liststyle li i{margin:3px 7px 0 0 !important;float:left}
 
 
 /* 42. Contact Forms
@@ -6823,3 +6825,16 @@ td .avatar {width:20px;height:20px}
 }
 #mobilepro i{color:#FFF}
 .subarrow {display:none}
+
+/*	45. Random hacks
+----------------------------------------------------------------------*/
+.fix-anchor{
+	padding-top:60px;
+	margin-top:-60px
+}
+
+input[type="submit"]{
+	height: 31px;
+    font-size: 14px !important;
+    font-weight: 800;
+}
