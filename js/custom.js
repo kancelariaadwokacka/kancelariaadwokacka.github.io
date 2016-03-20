@@ -14,9 +14,9 @@ jQuery(document).ready(function ($) {
 	jQuery.browser={};(function(){jQuery.browser.msie=false;
 	jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)\./)){
 	jQuery.browser.msie=true;jQuery.browser.version=RegExp.$1;}})();
-	
+
 	$('.sf-menu').find('.current-menu-item,.current-menu-parent,.current-menu-ancestor').addClass('selectedLava');
-	
+
 	// Superfish
 	if ($(".sf-menu")[0]) {
 		$('.sf-menu').superfish({
@@ -26,7 +26,7 @@ jQuery(document).ready(function ($) {
 			},
 			speed: 300
 		}).lavaLamp({
-			fx: "easeOutExpo", 
+			fx: "easeOutExpo",
 			speed: 600
 		});
 	}
@@ -62,16 +62,16 @@ jQuery(document).ready(function ($) {
 			jQuery('.page-content, .sliderr, .headdown, .head, .breadcrumb, footer').animate({'opacity': 1}, {duration: '2000', easing: 'easeInOutExpo'});
 		});
 	}
-	
-	
-	
+
+
+
 	// Tipsy
 	$('.toptip').tipsy({fade: true,gravity: 's',opacity:1});
 	$('.bottomtip').tipsy({fade: true,gravity: 'n',opacity:1});
 	$('.righttip').tipsy({fade: true,gravity: 'w',opacity:1});
 	$('.lefttip').tipsy({fade: true,gravity: 'e',opacity:1});
 	$('#wrap_flickr img').tipsy({fade: true,gravity: 's',opacity:1});
-	
+
 	// Blog Gallery Slider
 	if ($(".projectslider")[0]) {
 		jQuery('.projectslider').flexslider({
@@ -88,8 +88,8 @@ jQuery(document).ready(function ($) {
 			keyboardNav: false
 		});
 	}
-		
-		
+
+
 	// Tabs
 	var tabs = jQuery('ul.tabs');
 	tabs.each(function (i) {
@@ -109,8 +109,8 @@ jQuery(document).ready(function ($) {
 			}
 		});
 	});
-	
-	
+
+
 	// Accordion
 	jQuery("ul.tt-accordion li").each(function () {
 		if (jQuery(this).index() > 0) {
@@ -138,8 +138,8 @@ jQuery(document).ready(function ($) {
 
 		});
 	});
-	
-	
+
+
 	// Toggle
 	jQuery("ul.tt-toggle li").each(function () {
 	    jQuery(this).children(".toggle-content:not(.open)").css('display', 'none');
@@ -163,14 +163,14 @@ jQuery(document).ready(function ($) {
 
 
 	jQuery("ul.tt-toggle").find(".toggle-content.active").siblings(".toggle-head").trigger('click');
-	
-	
+
+
 	// 4Mob
 	$("#header nav").before('<div id="mobilepro"><i class="icon-reorder icon-remove"></i></div>');
 	if ($("body.isrtl")[0]) {
 		$("#header .sf-menu a.sf-with-ul").before('<div class="subarrow"><i class="icon-angle-left"></i></div>');
 		}else{
-		$(".sf-menu a.sf-with-ul").before('<div class="subarrow"><i class="icon-angle-right"></i></div>');	
+		$(".sf-menu a.sf-with-ul").before('<div class="subarrow"><i class="icon-angle-right"></i></div>');
 		}
 	$('.subarrow').click(function () {
 		$(this).parent().toggleClass("xpopdrop");
@@ -209,13 +209,13 @@ jQuery(document).ready(function ($) {
 			jQuery("#toTop").removeClass("hidett").addClass("showtt");
 		}
 	});
-	
+
 	// Notification
 	$(".notification-close").click(function () {
 		$(this).parent().slideUp("slow");
 		return false;
 	});
-	
+
 	// quicksand
 	if ($(".filter")[0]) {
 		var $portfolioClone = $(".portfolio").clone();
@@ -227,7 +227,7 @@ jQuery(document).ready(function ($) {
 			} else {
 				var $filteredPortfolio = $portfolioClone.find("li[data-type~=" + $filterClass + "]");
 			}
-				
+
 			// Call quicksand
 			$(".portfolio").quicksand($filteredPortfolio, {
 				duration: 800,
@@ -248,10 +248,10 @@ jQuery(document).ready(function ($) {
 		});
 
 	}
-	
-	
+
+
 	var isDesktop = (function() {
-		return !('ontouchstart' in window) // works on most browsers 
+		return !('ontouchstart' in window) // works on most browsers
 		|| !('onmsgesturechange' in window); // works on ie10
 	})();
 	window.isDesktop = isDesktop;
@@ -306,17 +306,17 @@ jQuery(document).ready(function ($) {
 			offset: 'bottom-in-view'
 		});
 	}
-	
-	
+
+
 	if( isDesktop ){
 		$.stellar({
 			horizontalScrolling: false,
 			verticalOffset: 0
 		});
 	}
-	
-	
-	
+
+
+
 	// Sticky
 	if ($(".my_sticky")[0]){
 	    $('.my_sticky').before('<div class="Corpse_Sticky"></div>');
@@ -333,7 +333,7 @@ jQuery(document).ready(function ($) {
 				$('.my_sticky').removeClass('sticky').css('padding-top','');
 				$('.my_sticky').stop(true).animate({opacity : 1}, 300);
 				$('.Corpse_Sticky').css('padding-top', '');
-				$('.my_sticky .logo a img').attr('src', 'images/kancelaria_logo.png');
+				$('.my_sticky .logo a img').attr('src', '/images/kancelaria_logo.png');
 			    });
 			}
 		    } else {
@@ -343,7 +343,7 @@ jQuery(document).ready(function ($) {
 				$('.my_sticky').addClass('sticky').css('padding-top', isAdmin + 'px');
 				$('.my_sticky.sticky').stop(true).animate({opacity : 1}, 300);
 				$('.Corpse_Sticky').css('padding-top', head_w + 'px');
-				$('.my_sticky .logo a img').attr('src', 'images/kancelaria_logo_mini.png');
+				$('.my_sticky .logo a img').attr('src', '/images/kancelaria_logo_mini.png');
 			    });
 			}
 		    }
@@ -359,7 +359,7 @@ jQuery(document).ready(function ($) {
 			    $('.my_sticky').removeClass('sticky');
 			    $('.my_sticky').stop(true).animate({opacity : 1}, 300);
 			    $('.Corpse_Sticky').css('padding-top', '');
-			    $('.my_sticky .logo a img').attr('src', 'images/kancelaria_logo.png');
+			    $('.my_sticky .logo a img').attr('src', '/images/kancelaria_logo.png');
 			});
 		    }
 		}
@@ -378,15 +378,15 @@ jQuery(document).ready(function ($) {
 				if (h>=mh){mh=h;}
 			});
 			pr.not('.msnry').find('li').height(mh);
-			});	
+			});
         });
 
 	} catch(e){}
-	
-	
+
+
 	//Set shop items Height
 	try {
-		
+
 		$('ul.products').each(function(){
 			var pr = $(this);
 			pr.imagesLoaded( function(){
@@ -395,9 +395,9 @@ jQuery(document).ready(function ($) {
 					var h = $(this).height();
 					if (h>=mh){mh=h;}
 				});
-				
+
 				pr.find('li.product').height(mh);
-				
+
 			});
 		});
 	} catch(e){}
@@ -425,8 +425,8 @@ jQuery(document).ready(function ($) {
 			jQuery(this).css('min-height',th);
 		});
 	} catch(e){}
-	
-	 
+
+
  	// Progress Bar
 	try {
 	  jQuery('.tt_progress_bar').waypoint(function () {
@@ -434,20 +434,20 @@ jQuery(document).ready(function ($) {
 		  var $this = jQuery(this),
 			bar = $this.find('.tt_bar'),
 			val = bar.data('percentage-value');
-	
+
 		  setTimeout(function () {
 			bar.css({"width":val + '%'});
 		  }, index * 200);
 		});
 	  }, { offset:'85%' });
 	} catch(e){}
-	
 
-	
+
+
 	_hoverFX();
 	_lightbox();
 
-	
+
 });
 
 
@@ -467,7 +467,7 @@ function _hoverFX(){
 			}
 		);
     });
-	
+
 }
 
 function _portfolioHeight(){
@@ -481,7 +481,7 @@ function _portfolioHeight(){
 		pr.not('.msnry').find('li').height(mh);
 	});
 }
-	
+
 /* jPlayer */
 function js_audioPlayer(l,f) {
 	jQuery("#"+l).jPlayer({
@@ -503,12 +503,12 @@ return;
 
 /* Lightbox */
 function _lightbox(){
-var lbarray = {			
+var lbarray = {
 	animation_speed: 'fast',
 	overlay_gallery: true,
 	autoplay_slideshow: false,
 	slideshow: 5000,
-	theme: 'pp_default', 
+	theme: 'pp_default',
 	opacity: 0.8,
 	show_title: false,
 	allow_resize: true,
@@ -520,17 +520,17 @@ var lbarray = {
 
 	var slctr='a[data-gal^="photo"],a[href$=jpg], a[href$=JPG], a[href$=jpeg], a[href$=JPEG], a[href$=png], a[href$=gif], a[href$=bmp]:has(img), a[class^="prettyPhoto"]';
 	jQuery(slctr).prettyPhoto();
-	
+
 	var windowWidth = window.screen.width < window.outerWidth ? window.screen.width : window.outerWidth;
 	var issmall = windowWidth < 500;
 	if(issmall){
 		jQuery(slctr).unbind('click.prettyphoto');
 	}
-		
-}
-	
 
-	
+}
+
+
+
 /* Extra Panel Google Map */
 google.maps.event.addDomListener(window, "load", mapfucntion_map_extra);
 function mapfucntion_map_extra() {
@@ -551,7 +551,7 @@ function mapfucntion_map_extra() {
     geocoder_map_extra.geocode( { 'address': address}, function(results, status) {
 	if (status == google.maps.GeocoderStatus.OK) {
 	    map_extra.setCenter(results[0].geometry.location);
-	    var image = "images/mapmarker.png";
+	    var image = "/images/mapmarker.png";
 	    var marker = new google.maps.Marker({
 		map: map_extra,
 		icon: image,
@@ -590,7 +590,7 @@ function mapfucntion_map_footer() {
 	geocoder_map_footer.geocode( { 'address': address}, function(results, status) {
 	    if (status == google.maps.GeocoderStatus.OK) {
 		map_footer.setCenter(results[0].geometry.location);
-		var image = "images/mapmarker.png";
+		var image = "/images/mapmarker.png";
 		var marker = new google.maps.Marker({
 		    map: map_footer,
 		    icon: image,
@@ -606,7 +606,5 @@ function mapfucntion_map_footer() {
 	    } else {
 		alert("Geocode was not successful for the following reason: " + status);
 	    }
-	});	
+	});
 }
-
-
