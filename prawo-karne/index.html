@@ -35,6 +35,17 @@
 
             <!-- Custom CSS -->
             <link rel='stylesheet' id='custom-css'  href='/css/custom-styles.css' type='text/css' media='all' />
+            <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-75349749-1', 'auto');
+		  ga('send', 'pageview');
+		
+	</script>
+
         </head>
 
         <body class="home tt_responsive">
@@ -86,7 +97,23 @@
                     <div class="page-content">
 						<div class="row clearfix">
 							<div class="grid_12">
-								<div class="gap clearfix custom-h50"></div>
+								<div class="gap clearfix custom-h50">
+									<ul itemscope itemtype="http://schema.org/BreadcrumbList" style="">
+									  <li itemprop="itemListElement" itemscope
+									      itemtype="http://schema.org/ListItem" style="display:inline-block; padding:10px;">
+									    <a itemprop="item" href="http://adwokatwalinska.pl/">
+									    <span itemprop="name">Home</span></a>
+									    <meta itemprop="position" content="1" />
+									  </li>  > 
+									  <li itemprop="itemListElement" itemscope
+									      itemtype="http://schema.org/ListItem" style="display:inline-block; padding:10px;">
+									    <a itemprop="item">
+									    <span itemprop="name">Prawo karne</span></a>
+									    <meta itemprop="position" content="2" />
+									  </li>
+									</ul>
+									
+								</div>
 								<div class="row clearfix" >
 									<div class="grid_12" >
 										<div class="clearfix title-center" >
@@ -148,14 +175,19 @@ prowadzenie pojazdów pod wpływem alkoholu, oszustwa, wyłudzenia, kradzieże, 
 								</div>
 
 								<div class="footer_widget widget_thelaw_contact grid_4" >
+									<span itemscope itemtype="https://schema.org/Attorney">
 									<h3 class="col-title" >Kontakt</h3>
-									<div class="address" >
-										<p>ul. Radwańska 4 lokal 1<br/>90-453 Łódź</p>
-										<div><i class="icon-phone icon-xs"></i><a href="tel:+48695439280">+48 695 439 280</a></div>
-										<div><a href="mailto:adwokat@walinska.pl" target="_blank"><i class="icon-envelope-alt icon-xs" ></i>adwokat@walinska.pl</a></div>
+									<p itemprop="name">Adwokat Monika Walińska</p>
+									<div class="address">
+										<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+										<p>ul. <span itemprop="streetAddress">Radwańska 4 lokal 1</span><br/><span itemprop="postalCode">90-453</span> <span itemprop="addressLocality">Łódź</span></p>
+										</span>
+										<div><i class="icon-phone icon-xs"></i><a href="tel:+48695439280"><span itemprop="telephone">+48 695 439 280</span></a></div>
+										<div><a href="mailto:adwokat@walinska.pl" target="_blank"><i class="icon-envelope-alt icon-xs" ></i><span itemprop="email">adwokat@walinska.pl</span></a></div>
 										<div><i class="icon-edit-sign icon-xs"></i>NIP 732 200 73 94</div>
 										<div><a href="https://www.google.pl/maps/place/Radwa%C5%84ska+4,+%C5%81%C3%B3d%C5%BA/@51.7525924,19.4568162,17z/data=!3m1!4b1!4m2!3m1!1s0x471a34da64313313:0xe0870d0778b2d46f" target="_blank"><i class="icon-globe icon-xs" ></i>Zobacz na większej mapie</a></div>
 									</div>
+									</span>	
 								</div>
 
 							</div><!-- row -->
