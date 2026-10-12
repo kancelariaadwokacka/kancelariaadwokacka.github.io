@@ -1,30 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://adwokatwalinska.pl/</loc>
+    <loc>https://adwokatwalinska.pl/</loc>
   </url>
   <url>
-    <loc>http://adwokatwalinska.pl/prawo-rodzinne-opiekuncze/rozwod/</loc>
+    <loc>https://adwokatwalinska.pl/o-kancelarii/</loc>
   </url>
   <url>
-    <loc>http://adwokatwalinska.pl/prawo-rodzinne-opiekuncze/</loc>
+    <loc>https://adwokatwalinska.pl/prawo-karne/</loc>
   </url>
   <url>
-    <loc>http://adwokatwalinska.pl/prawo-karne/</loc>
+    <loc>https://adwokatwalinska.pl/prawo-spadkowe/</loc>
   </url>
   <url>
-    <loc>http://adwokatwalinska.pl/prawo-spadkowe/</loc>
+    <loc>https://adwokatwalinska.pl/prawo-rodzinne-opiekuncze/</loc>
   </url>
   <url>
-    <loc>http://adwokatwalinska.pl/prawo-rodzinne-opiekuncze/alimenty/</loc>
+    <loc>https://adwokatwalinska.pl/prawo-rodzinne-opiekuncze/alimenty/</loc>
   </url>
   <url>
-    <loc>http://adwokatwalinska.pl/o-kancelarii/</loc>
+    <loc>https://adwokatwalinska.pl/prawo-rodzinne-opiekuncze/rozwod/</loc>
   </url>
   <url>
-    <loc>http://adwokatwalinska.pl/odszkodowania/</loc>
+    <loc>https://adwokatwalinska.pl/odszkodowania/</loc>
   </url>
-    <url>
-    <loc>http://adwokatwalinska.pl/odszkodowania/komunikacyjne-powypadkowe</loc>
+  <url>
+    <loc>https://adwokatwalinska.pl/odszkodowania/komunikacyjne-powypadkowe/</loc>
+  </url>
+  <url>
+    <loc>https://adwokatwalinska.pl/cennik/</loc>
   </url>
 </urlset>
